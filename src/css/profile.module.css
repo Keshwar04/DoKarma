@@ -1,0 +1,203 @@
+.profileContainer {
+    margin-top: 73px;
+    border-bottom: 1px solid #dee2e6;
+
+    & ul {
+        display: flex;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & .listContainer {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+            padding: 6px 9px;
+            border-radius: 3px;
+
+            & li {
+                list-style: none;
+                text-wrap: nowrap;
+            }
+
+            & .icon {
+                font-size: clamp(1.4rem, 3vw, 1.5rem);
+            }
+
+            & .title {
+                font-size: clamp(0.9rem, 1.7vw, 1rem);
+            }
+        }
+    }
+}
+
+.info {
+    & h3 {
+        font-size: clamp(1.3rem, 3vw, 1.8rem);
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    & p {
+        font-size: clamp(0.8rem, 1.7vw, 1rem);
+        color: #475467;
+    }
+}
+
+.button {
+    & .btnStyle {
+        background: var(--secondary-btn-nav);
+        color: white;
+        font-size: clamp(0.85rem, 1.7vw, 1rem);
+
+        &:hover {
+            background-color: var(--secondary-btn-nav);
+            color: white;
+        }
+    }
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+
+    &>label {
+        margin-bottom: 12px;
+    }
+}
+
+.bannerContainer {
+    display: flex;
+    flex: 1;
+    width: 72%;
+
+    & img {
+        width: 110px;
+        height: 100px;
+    }
+
+    & .dropzone {
+        border: 1.4px dashed #dee2e6;
+        border-radius: 5px;
+        padding: 7px;
+        cursor: pointer;
+
+        & .hashCircle {
+            width: 42px;
+            height: 42px;
+            background: #EDEDED;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        & .uploadTxt {
+            text-align: center;
+            overflow: hidden;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            font-size: clamp(0.7rem, 1.7vw, 0.85rem);
+            margin: 7px 0;
+
+            & span:first-child {
+                color: #84CC16;
+            }
+        }
+
+        & .sizeTxt {
+            text-align: center;
+            overflow: hidden;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            font-size: clamp(0.7rem, 1.7vw, 0.85rem);
+            color: #667085;
+        }
+    }
+}
+
+.details {
+    display: flex;
+    margin-top: 16px;
+
+    &>label {
+        width: 25%;
+    }
+
+    .detailsField {
+        width: 60%;
+        display: flex;
+
+        & .profileDetails {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        & .detailsSub {
+            display: flex;
+            margin-bottom: 16px;
+
+            & p {
+                width: 25%;
+            }
+
+            & button {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.amountContainer {
+    background-color: #F7FEE7;
+    margin-bottom: 1.7rem;
+
+    & .rupee {
+        background: #D9F99D;
+        padding: 9px 16px;
+        border-radius: 50%;
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+
+    & .txt {
+        font-size: clamp(0.8rem, 1.8vw, 1.2rem);
+        font-weight: 600;
+    }
+}
+
+.cardContainer {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+
+    & img {
+        border-radius: 12px 12px 0 0;
+        max-width: 100%;
+    }
+
+    & .cardDetails {
+        padding: 15px;
+
+        & .name {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            font-weight: 600;
+        }
+
+        & .txts {
+            font-size: clamp(0.8rem, 1.7vw, 1rem);
+            color: #475467;
+        }
+    }
+}

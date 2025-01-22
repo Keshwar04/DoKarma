@@ -1,0 +1,162 @@
+.slidersHead {
+  & h1 {
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+  }
+
+  & .subTxt {
+    color: #475467;
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+.charRestrict {
+  color: #344054;
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  margin: 4px 4px 0 4px;
+}
+
+.prevNxtBtn {
+  background: none;
+  border: none;
+  color: #475467;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.fileUpload {
+  border: 1.4px dashed #dee2e6;
+  border-radius: 5px;
+  width: 98%;
+  padding: 3rem 0;
+  margin: 4px auto;
+  cursor: pointer;
+
+  & .hashCircle {
+    width: 42px;
+    height: 42px;
+    background: #ededed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  & .uploadTxt {
+    color: #facc15;
+    /* font-size: clamp(0.7rem, 2vw, 0.9rem); */
+    margin: 6px 0;
+  }
+
+  & .format {
+    color: #667085;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+  }
+}
+
+.donPetOverall {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  height: 410px;
+  border-radius: 5px;
+  /* margin-right: 1rem; */
+  position: relative;
+  padding: 6px 12px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & p {
+    font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+    color: #475467;
+  }
+
+  & .bottom {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    & h3 {
+      font-size: clamp(1.3rem, 2vw, 1.8rem);
+    }
+
+    & p {
+      font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+  }
+}
+
+.infoConatiner {
+  width: 95%;
+
+  & .avatar {
+    max-width: 18%;
+  }
+
+  & h5 {
+    font-weight: 600;
+    font-size: clamp(0.82rem, 1.8vw, 1.2rem);
+    text-wrap: balance;
+  }
+
+  & .status {
+    color: #475467;
+    font-size: clamp(0.7rem, 1.8vw, 0.9rem);
+    margin: 8px 0;
+  }
+
+  & .personDetails {
+    color: #475467;
+    font-size: clamp(0.7rem, 1.7vw, 0.9rem);
+  }
+
+  & .yellowCircle {
+    @media (max-width: 575px) {
+      & {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+
+  & .greenCircle {
+    width: 22px;
+    height: 22px;
+    background: #f7fee7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .grayCircle {
+    width: 22px;
+    height: 22px;
+    background: #f2f4f7;
+    border-radius: 50%;
+    font-size: clamp(0.5rem, 2vw, 0.7rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .range {
+    width: 16%;
+    background: #ecfccb;
+    border-radius: 10px;
+    margin-left: 16px;
+
+    & .perc {
+      width: 40%;
+      background: #84cc16;
+      padding: 4px 3px;
+    }
+  }
+}

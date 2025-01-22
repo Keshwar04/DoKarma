@@ -1,0 +1,56 @@
+.sidebarItem {
+  padding: 10px 32px;
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebarItem:hover {
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebarTitle {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.sidebarTitle span i {
+  display: inline-block;
+  width: 1.5em;
+}
+
+.sidebarTitle .toggle-btn {
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.sidebarItem.open>.sidebarTitle .toggle-btn {
+  transform: rotate(180deg);
+}
+
+.sidebarContent {
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+}
+
+.sidebarItem.open>.sidebarContent {
+  height: auto;
+}
+
+.sidebarItem.plain {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebarItem.plain:hover {
+  text-decoration: underline;
+}
+
+.sidebarItem.plain i {
+  display: inline-block;
+  width: 1.7em;
+}

@@ -1,0 +1,50 @@
+import React, { useState, useEffect, useRef } from 'react';
+
+const App = () => {
+  // State to control the visibility of the <h1> element
+  const [isVisible, setIsVisible] = useState(true);
+  const h1Ref = useRef(null);
+
+  // Function to handle click events
+  const handleClickOutside = (event) => {
+    if (h1Ref.current && !h1Ref.current.contains(event.target)) {
+      setIsVisible(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+  }, []);
+
+  return (
+    <div>
+      {isVisible && (
+        <h1 ref={h1Ref} style={{ background: 'blue', color: 'white' }}>
+          Hello
+        </h1>
+      )}
+    </div>
+  );
+};
+
+export default App;
+
+
+tailwind layouts : 
+sm : 640px
+md : 768px
+lg : 1024px
+xl : 1280px
+2xl : 1536px
+
+
+delete a row ---> ctrl + shift + k
+Don't delete::::-----> default card,calendar ui shadcn components changed
+progressPrimary: 'var(--progress-primary)',
+progressPrimOuter: 'var(--progressPrim-outer)',
+progressSecondary: 'var(--progress-secondary)',
+progressSecOuter: 'var(--progressSec-outer)',
+
+
+
+  tipsAmount
+  amount.user

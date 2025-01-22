@@ -1,0 +1,130 @@
+.head {
+  font-size: clamp(1.8rem, 3.5vw, 4rem);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.subTxt {
+  color: #475467;
+  font-size: clamp(0.85rem, 1.6vw, 1rem);
+}
+
+.momBaby {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.desc {
+  color: #475467;
+  font-size: 18px;
+}
+
+.creator {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 600;
+}
+
+.suppotersHead {
+  width: 30%;
+  margin-left: 2%;
+}
+
+.action {
+  width: 68%;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.support {
+  font-size: clamp(0.6rem, 3vw, 0.85rem);
+  text-decoration: underline;
+}
+
+.readMore {
+  text-decoration: underline #475467;
+  cursor: pointer;
+}
+
+.btnStyle {
+  background: var(--primary-btn) !important;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.personName {
+  font-weight: 600;
+  font-size: clamp(0.87rem, 1.5vw, 1rem);
+}
+
+.amt {
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+}
+
+.status {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+}
+
+.greenCircle {
+  width: 42px;
+  height: 42px;
+  background: #d9f99d;
+  border-radius: 50%;
+}
+
+.blackCircle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #1e293b;
+  border-radius: 50%;
+}
+
+.yellowCircle {
+  width: 42px;
+  height: 42px;
+  background: #fde68a;
+  border-radius: 50%;
+}
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.donation {
+  color: #475467;
+  font-weight: 600;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.donationAmt {
+  font-size: clamp(1.4rem, 3vw, 1.7rem);
+}
+
+.donationTotalAmt {
+  font-size: clamp(1.4rem, 3vw, 1.7rem);
+  font-weight: 600;
+}
+
+.graySmall {
+  color: #475467;
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+  margin-bottom: 12px;
+}
+
+.saveBtn {
+  /* background-color: #FBBF24 !important;
+    color: #FFFFFF !important; */
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .suppotersHead {
+    width: 88%;
+    margin-left: 15px;
+  }
+
+  .action {
+    width: 88%;
+  }
+}

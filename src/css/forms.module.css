@@ -1,0 +1,23 @@
+.searchContainer {
+    width: 250px !important;
+    position: relative;
+
+    & .searchIcon {
+        font-size: 20px;
+        color: gray;
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        z-index: 9;
+    }
+
+    & input {
+        padding-left: 39px !important;
+    }
+
+    @media(max-width: 767px) {
+        & {
+            width: 100% !important;
+        }
+    }
+}

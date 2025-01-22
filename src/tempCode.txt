@@ -1,0 +1,62 @@
+const [activePopover, setActivePopover] = useState('');
+
+const handlePopup = (text: string) => {
+    setActivePopover(activePopover == text ? '' : text)
+    setIsEnable({ ...isEnable, popup: true })
+  }
+
+-----------------------
+  <p className='mb-0 sticky top-0 bg-white text-center text-[#60A5FA]'>Activity</p>
+-----------------------
+   <p className={`text-[#60A5FA] bg-white ${isEnable.showAll ? 'sticky' : ''} 
+                  bottom-0 right-0 text-end cursor-pointer`}
+                  onClick={() => setIsEnable({ ...isEnable, isEnable.showAll: true })}
+                >
+                  {isEnable.showAll ? 'View Less' : 'View All'}
+    </p>
+------------------------
+    .popup {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 8px 20px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+-------------------------
+<Label className="flex items-center text-center my-2">
+                <span className="flex-grow h-[1px] bg-gray-300"></span>
+                <span className="mx-3 italic text-gray-500">or</span>
+                <span className="flex-grow h-[1px] bg-gray-300"></span>
+            </Label>
+            <div className="flex justify-center">
+                <Button variant='outline' className="text-formColor hover:text-formColor w-full">
+                    <FaGoogle />&nbsp; Continue with Google
+                </Button>
+            </div>
+
+-------------------------
+const handleSubmit = () => {
+        toast({
+            title: "Scheduled: Catch up ",
+            description: "Friday, February 10, 2023 at 5:57 PM",
+            action: (
+                <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
+            ),
+        })
+    }
+
+<div className='flex justify-center mt-4'>
+                                <Button onClick={handleSubmit}>Submit</Button>
+                            </div>
+-----------------------
+
+ <div className={`${types.view === 'List' ? 'visible' : 'hidden'}`}>
+                            <DonatePagination setStartIdx={setStartIdx} startIdx={startIdx}
+                                endIdx={endIdx} setEndIdx={setEndIdx} noOfList={noOfList} />
+                        </div>
+
+-----------------------
